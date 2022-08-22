@@ -1,4 +1,5 @@
 import settings
+from module_3 import Student
 
 
 class MaxStudentsError(Exception):
@@ -17,7 +18,7 @@ class Group:
         self.title = title
         self.students = []
 
-    def add_student(self, student):
+    def add_student(self, student: Student):
         if len(self.students) >= settings.MAX_STUDENTS_IN_GROUP:
             raise MaxStudentsError('Too many student in group!')
 
