@@ -1,4 +1,4 @@
-from Pro_homework_2 import Person
+from module_5 import Person
 
 
 class Student(Person):
@@ -14,6 +14,10 @@ class Student(Person):
 
     def __str__(self):
         return f'{super().__str__()}; {self.date_of_birth}'
+
+
+
+
 
 
 
